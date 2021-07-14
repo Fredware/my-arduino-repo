@@ -42,6 +42,9 @@ int sum_iter(int num){
   for (int i=0; i<5; i++) num+=i;
   return num;
 }
+void print_something(){
+  Serial.print("This might be working");
+  }
 
 void setup() {
   Serial.begin( BAUD_RATE);
