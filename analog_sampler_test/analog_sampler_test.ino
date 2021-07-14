@@ -37,6 +37,12 @@ bool debug_timer(void *){
   return true;
 }
 
+int sum_iter(int num){
+  
+  for (int i=0; i<5; i++) num+=i;
+  return num;
+}
+
 void setup() {
   Serial.begin( BAUD_RATE);
   int period_ms = round( 1000.0 / SAMPLING_FREQ);
