@@ -37,6 +37,10 @@ bool debug_timer(void *){
   return true;
 }
 
+void print_something(){
+  Serial.print("This might be working");
+  }
+
 void setup() {
   Serial.begin( BAUD_RATE);
   int period_ms = round( 1000.0 / SAMPLING_FREQ);
